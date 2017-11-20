@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="app">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
@@ -9,7 +9,7 @@
 	<script src="angular-chart.min.js"></script>
 	<script src="app.js"></script>
   </head>
-  <body>
+  <body ng-controller="LineCtrl">
 	<canvas id="line" class="chart chart-line" chart-data="data"
 	chart-labels="labels" chart-series="series" chart-options="options"
 	chart-dataset-override="datasetOverride" chart-click="onClick">
